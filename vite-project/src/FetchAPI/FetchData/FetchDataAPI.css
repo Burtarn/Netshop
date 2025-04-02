@@ -1,13 +1,13 @@
 .jeans-container {
-    max-width: 1200px; /* Justera max-bredden om det behövs */
+    max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     background-color: var(--mainColor);
-    display: grid; /* Byt till CSS Grid */
-    grid-template-columns: repeat(4, 1fr); /* 4 kolumner */
-    gap: 20px; /* Avstånd mellan items */
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
     text-align: center;
 }
 
@@ -18,6 +18,22 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-color: var(--mainColor);
     transition: transform 0.2s;
+
+    opacity: 0; 
+    transform: translateY(10px); 
+    animation: fadeIn 0.5s forwards;
+}
+
+.fade-in {
+    opacity: 1; 
+    animation: fadeIn 1s forwards; 
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
 }
 
 .jeans-item:hover {

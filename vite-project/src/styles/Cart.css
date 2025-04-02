@@ -1,5 +1,5 @@
 .cart-container {
-    display: block; /* Se till att ta hela bredden */
+    display: block; 
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
@@ -9,20 +9,22 @@
 }
 
 .cart-item {
-    flex: 1 1 250px; /* Minimum bredd på 250px */
+    flex: 1 1 250px; 
     border: 1px solid var(--brigherRed);
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-color: var(--mainColor);
     transition: transform 0.2s;
-    margin-bottom: 20px; /* Avstånd mellan items */
+    margin-bottom: 20px; 
+    text-align: center;
+    margin-top: 10px;
 }
 .cart-items {
-    display: flex; /* Använd Flexbox */
-    flex-wrap: wrap; /* Tillåt radbrytningar */
-    gap: 20px; /* Avstånd mellan items */
-    justify-content: center; /* Centrera items */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
 }
 
 .cart-item:hover {
@@ -30,11 +32,10 @@
 }
 
 .cart-image {
-    max-width: 150px; /* Justera max-bredden */
-    height: auto; /* Bevara proportionerna */
-    margin-bottom: 10px; /* Avstånd under bilden */
+    max-width: 150px;
+    height: auto; 
+    margin-bottom: 10px; 
 }
-
 .cart-button {
     width: 100%;
     padding: 10px;
@@ -61,6 +62,3 @@
     text-align: center;
 }
 
-h1 {
-    text-align: center;
-}
