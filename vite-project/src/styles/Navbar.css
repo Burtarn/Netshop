@@ -1,0 +1,108 @@
+    .header {
+        background-color: var(--mainColor)
+    }
+    
+    .navbar {
+        color: var(--brigherRed);
+        padding: 10px 20px;
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        font-size: 24px;
+        color: var(--brigherRed);
+    }
+    
+    .menu-icon {
+        display: none;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    
+    .nav-menu {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .nav-menu li {
+        display: inline;
+    }
+    
+    .nav-menu a {
+        color: var(--brigherRed);
+        text-decoration: none;
+    }
+    
+    .icons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .icon {
+        cursor: pointer;
+        font-size: 15px; 
+        color: var(--brigherRed);
+    }
+    
+    .search-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .searchbar {
+        padding: 5px;
+        border: none;
+        border-radius: 4px;
+        margin-left: 10px;
+        width: 0; /* Startar med bredd 0 */
+        opacity: 0; /* Startar som osynlig */
+        transition: width 0.3s ease, opacity 0.3s ease; /* Animation för bredd och opacitet */
+    }
+    
+    .searchbar.expanded {
+        width: 200px; /* Utvidgad bredd */
+        opacity: 1; /* Gör det synligt */
+    }
+    
+    .close-icon {
+        cursor: pointer;
+        font-size: 24px; /* Justera storleken här om så önskas */
+        margin-left: 10px; /* Avstånd mellan sökrutan och stängningsikonen */
+    }
+
+    @media (max-width: 768px) {
+        .menu-icon {
+        display: block;
+        }
+    
+        .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        }
+    
+        .nav-menu.active {
+        display: flex;
+        }
+    
+        .nav-menu li {
+        padding: 10px 20px;
+        text-align: center;
+        }
+    }
+    @media (max-width: 768px) {
+        .search-container {
+        display: none; /* Döljer sökcontainern på mindre skärmar */
+        }
+    }

@@ -1,0 +1,64 @@
+.jeans-container {
+    max-width: 1200px; /* Justera max-bredden om det behövs */
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: var(--mainColor);
+    display: grid; /* Byt till CSS Grid */
+    grid-template-columns: repeat(4, 1fr); /* 4 kolumner */
+    gap: 20px; /* Avstånd mellan items */
+    text-align: center;
+}
+
+.jeans-item {
+    border: 1px solid var(--brigherRed);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--mainColor);
+    transition: transform 0.2s;
+}
+
+.jeans-item:hover {
+    transform: translateY(-5px);
+}
+
+.jeans-image {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--brigherRed);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: var(--darkRed);
+    transform: translateY(-2px);
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+
+@media (max-width: 800px) {
+    .jeans-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 500px) {
+    .jeans-container {
+        grid-template-columns: 1fr; 
+    }
+}

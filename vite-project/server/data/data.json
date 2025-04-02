@@ -1,0 +1,163 @@
+{
+    "data": {
+        "user": {
+            "id": 1,
+            "name": "Robin",
+            "email": "Robin@vf.se"
+        },
+        "products": {
+            "jeans": [
+                {
+                    "id": 1,
+                    "name": "Slim Fit Jeans",
+                    "price": 599,
+                    "image": "https://image-resizing.booztcdn.com/lindbergh/lin3000026pb_cpaleblue_v1204482.webp?has_grey=1&has_webp=1&size=source",
+                    "description": "Tighta och stilrena jeans med modern passform.",
+                    "inStock": true,
+                    "stockQuantity": 20
+                },
+                {
+                    "id": 2,
+                    "name": "Regular Fit Jeans",
+                    "price": 549,
+                    "image": "https://image-resizing.booztcdn.com/only-sons/os22024939_cmediumbluedenim_v191511.webp?has_grey=1&has_webp=1&size=source",
+                    "description": "Bekväma jeans med klassisk passform.",
+                    "inStock": true,
+                    "stockQuantity": 15
+                },
+                {
+                    "id": 3,
+                    "name": "Baggy Jeans",
+                    "price": 499,
+                    "image": "https://image-resizing.booztcdn.com/woodbird/woo2136105_clightblue.webp?has_grey=1&has_webp=1&size=source",
+                    "description": "Luftiga och sköna jeans i avslappnad stil.",
+                    "inStock": true,
+                    "stockQuantity": 10
+                },
+                {
+                    "id": 4,
+                    "name": "Ripped Jeans",
+                    "price": 699,
+                    "image": "https://image-resizing.booztcdn.com/replay/rpm914y00057370g_cblue_v010lightblue.webp?has_grey=1&has_webp=1&size=source",
+                    "description": "Trendiga jeans med slitningar för en cool look.",
+                    "inStock": true,
+                    "stockQuantity": 5
+                }
+            ],
+            "tshirts": [
+                {
+                    "id": 5,
+                    "name": "Vit T-shirt",
+                    "price": 199,
+                    "image": "https://dressmann.imgix.net/globalassets/productimages/7213478_90_f_q_.jpg?auto=format&ar=3:5&fit=crop&w=800&q=60",
+                    "description": "Klassisk vit t-shirt i 100% bomull.",
+                    "inStock": true,
+                    "stockQuantity": 30
+                },
+                {
+                    "id": 6,
+                    "name": "Svart T-shirt",
+                    "price": 199,
+                    "image": "https://dressmann.imgix.net/globalassets/xx-archive-keep-product-images/productimages/7050222802527_f_q_7213477_9904.jpg?auto=format&ar=3:5&fit=crop&w=800&q=60",
+                    "description": "Snygg och stilren svart t-shirt.",
+                    "inStock": true,
+                    "stockQuantity": 25
+                },
+                {
+                    "id": 7,
+                    "name": "Oversized T-shirt",
+                    "price": 249,
+                    "image": "https://images.jackjones.com/12259975/4537053/001/jackjones-jjechargeteeo-necknoos-vit.png?v=b8b8da2450da3fd86979a6b16a456e49&format=webp&width=1280&quality=90&key=25-0-3",
+                    "description": "Extra rymlig t-shirt för en avslappnad look.",
+                    "inStock": true,
+                    "stockQuantity": 18
+                },
+                {
+                    "id": 8,
+                    "name": "Grafisk T-shirt",
+                    "price": 299,
+                    "image": "https://junkyard.imgix.net/globalassets/productimages/7356684_900_b_f_sweetsktbs_sweetlooseteehands2404_q2_junkyard.jpg?auto=format&ar=3:5&fit=crop&w=800&q=60",
+                    "description": "T-shirt med tryck i modern design.",
+                    "inStock": true,
+                    "stockQuantity": 22
+                }
+            ],
+            "trojor": [
+                {
+                    "id": 9,
+                    "name": "Stickad Tröja",
+                    "price": 399,
+                    "image": "https://image-resizing.booztcdn.com/selected-homme/sel16092599_coatmeal_v184679.webp?has_grey=1&has_webp=1&size=source",
+                    "description": "Mysig stickad tröja i högkvalitativt garn.",
+                    "inStock": true,
+                    "stockQuantity": 15
+                },
+                {
+                    "id": 10,
+                    "name": "Hoodie",
+                    "price": 499,
+                    "image": "https://image-resizing.booztcdn.com/lmtd/ni13231959_cturtledove_v885213701.webp?has_grey=1&has_webp=1&size=source",
+                    "description": "Bekväm hoodie med mjukt foder.",
+                    "inStock": true,
+                    "stockQuantity": 12
+                },
+                {
+                    "id": 11,
+                    "name": "Crewneck Tröja",
+                    "price": 449,
+                    "image": "https://image-resizing.booztcdn.com/mango/man77017117aw24_clightbeige_v05.webp?has_grey=1&has_webp=1&size=source",
+                    "description": "Enkel och stilren tröja med rund hals.",
+                    "inStock": true,
+                    "stockQuantity": 20
+                },
+                {
+                    "id": 12,
+                    "name": "Zip-up Hoodie",
+                    "price": 549,
+                    "image": "https://image-resizing.booztcdn.com/lindbergh/lin30831035_cecrumel.webp?has_grey=1&has_webp=1&size=source",
+                    "description": "Hoodie med dragkedja för flexibilitet.",
+                    "inStock": true,
+                    "stockQuantity": 8
+                }
+            ],
+            "ovrigt": [
+                {
+                    "id": 13,
+                    "name": "Solglasögon",
+                    "price": 299,
+                    "image": "https://image-resizing.booztcdn.com/selected-homme/sel16088865_cdemitasse_v182919s820300.webp?has_grey=1&has_webp=1&size=source_wide",
+                    "description": "Stilrena solglasögon med UV-skydd.",
+                    "inStock": true,
+                    "stockQuantity": 25
+                },
+                {
+                    "id": 14,
+                    "name": "Underkläder (2-pack)",
+                    "price": 199,
+                    "image": "https://m.media-amazon.com/images/I/51SyFT8wzYL._AC_SX679_.jpg",
+                    "description": "Bekväma bomullsunderkläder i 2-pack.",
+                    "inStock": true,
+                    "stockQuantity": 30
+                },
+                {
+                    "id": 15,
+                    "name": "Axelväska",
+                    "price": 599,
+                    "image": "https://m.media-amazon.com/images/I/41gWF9Q-6QL.__AC_SX300_SY300_QL70_ML2_.jpg",
+                    "description": "Trendig axelväska i läderimitation.",
+                    "inStock": true,
+                    "stockQuantity": 10
+                },
+                {
+                    "id": 16,
+                    "name": "Keps",
+                    "price": 399,
+                    "image": "https://image-resizing.booztcdn.com/new-era/nea10531938_cnavy_v450.webp?has_grey=1&has_webp=1&size=w400&dpr=2.5",
+                    "description": "Trendig keps i alla väder.",
+                    "inStock": true,
+                    "stockQuantity": 20
+                }
+            ]
+        }
+    }
+}

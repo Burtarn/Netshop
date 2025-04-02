@@ -1,0 +1,75 @@
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid var(--brigherRed);
+    border-radius: 8px;
+    box-shadow: 0 2px 15px var(--darkRed);
+    background-color: var(--mainColor);
+    margin-top: 250px;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--brigherRed);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: var(--mainColor);
+}
+
+::placeholder {
+    color: var(--brigherRed);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--brigherRed);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--darkRed);
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.fade-in {
+    opacity: 0; 
+    animation: fadeIn 1s forwards; 
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
+
+/* Responsiv design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        margin: 20px auto;
+        margin-top: 150px; /* Justera för mindre skärmar */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Minska rubrikens storlek */
+    }
+
+    input, button {
+        padding: 8px; /* Minska padding för mindre skärmar */
+    }
+}

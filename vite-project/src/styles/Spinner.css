@@ -1,0 +1,14 @@
+.spinner {
+    border: 8px solid rgba(255, 255, 255, 0.3); /* Ljus färg för bakgrunden */
+    border-top: 8px solid var(--brigherRed); /* Färgen på toppen av spinnern */
+    border-radius: 50%; /* Gör den rund */
+    width: 50px; /* Bredd på spinnern */
+    height: 50px; /* Höjd på spinnern */
+    animation: spin 1s linear infinite; /* Animation */
+    margin: 20px auto; /* Centrera spinnern */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

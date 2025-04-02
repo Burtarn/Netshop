@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --mainColor: #000000;
+  --darkRed: #3D0000;
+  --lighterRed: #950101;
+  --brigherRed: #FF0000;
+  --white: white;
+}
+
+body {
+  background-color: var(--mainColor);
+  font-family: 'Bebas Neue', cursive; /* Använd Bebas Neue som standardtypsnitt */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h4, h5, h6 {
+  color: var(--brigherRed);
+  font-family: 'Bebas Neue', cursive; /* Använd typsnittet för rubriker */
+}
+
+h2, h3, p {
+  color: var(--brigherRed);
+  font-family: 'Roboto', sans-serif; /* Använd Roboto för h2, h3 och p */
+}
+
