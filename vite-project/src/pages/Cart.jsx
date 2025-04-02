@@ -1,23 +1,33 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { removeItem } from '../store/cartSlice';
+import '../styles/Cart.css'
 
 const Cart = () => {
-  const cartItems = useSelector((state) => state.jeans.items); 
+  const dispatch = useDispatch();
+  const cartItems = useSelector((state) => state.cart.items); 
+
+  const handleRemove = (item) => {
+    dispatch(removeItem({ id: item.id }));
+  };
 
   return (
-    <div>
+    <div className="cart-container">
       <h1>Cart</h1>
       {cartItems.length === 0 ? (
-        <p>Din varukorg är tom.</p>
+        <p className="empty-cart">Din varukorg är tom.</p>
       ) : (
-        <ul>
-          {cartItems.map((jeans, index) => (
-            <li key={index}>
-              <p>{jeans.name}</p>
-              <p>{jeans.price} SEK</p>
-            </li>
+        <div className="cart-items">
+          {cartItems.map((item, index) => (
+            <div className="cart-item" key={index}>
+              <p>{item.name}</p>
+              <img src={item.image} alt={item.name} className="cart-image" />
+              <p>{item.description}</p>
+              <p>{item.price} SEK</p>
+              <button className="cart-button" onClick={() => handleRemove(item)}>Ta bort</button>
+            </div>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );

@@ -1,0 +1,66 @@
+.cart-container {
+    display: block; /* Se till att ta hela bredden */
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: var(--mainColor);
+}
+
+.cart-item {
+    flex: 1 1 250px; /* Minimum bredd på 250px */
+    border: 1px solid var(--brigherRed);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--mainColor);
+    transition: transform 0.2s;
+    margin-bottom: 20px; /* Avstånd mellan items */
+}
+.cart-items {
+    display: flex; /* Använd Flexbox */
+    flex-wrap: wrap; /* Tillåt radbrytningar */
+    gap: 20px; /* Avstånd mellan items */
+    justify-content: center; /* Centrera items */
+}
+
+.cart-item:hover {
+    transform: translateY(-5px);
+}
+
+.cart-image {
+    max-width: 150px; /* Justera max-bredden */
+    height: auto; /* Bevara proportionerna */
+    margin-bottom: 10px; /* Avstånd under bilden */
+}
+
+.cart-button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--brigherRed);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cart-button:hover {
+    background-color: var(--darkRed);
+    transform: translateY(-2px);
+}
+
+.empty-cart {
+    text-align: center;
+    color: gray;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
