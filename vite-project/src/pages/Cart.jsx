@@ -8,6 +8,8 @@ const Cart = () => {
     const dispatch = useDispatch();
     const cartItems = useSelector((state) => state.cart.items); 
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isCouponVisible, setIsCouponVisible] = useState(false);
+    const [couponCode, setCouponCode] = useState('');
 
     const groupCartItems = (items) => {
         const groupedItems = {};
@@ -35,6 +37,10 @@ const Cart = () => {
         console.log('Beställning skickad:', orderDetails);
     };
 
+    const toggleCouponInput = () => {
+        setIsCouponVisible((prev) => !prev);
+    };
+
     return (
         <div className="cart-container">
             <h1>Cart</h1>
@@ -56,6 +62,23 @@ const Cart = () => {
             )}
             <div className="total-amount">
                 <h2>Totalt belopp: {getTotalAmount()} SEK</h2>
+            </div>
+
+            <div className='coupon-section'>
+                <p onClick={toggleCouponInput} style={{ cursor: 'pointer', color: 'red' }}>
+                    Har du en rabattkod?
+                </p>
+                {isCouponVisible && (
+                    <div className={isCouponVisible ? 'active' : ''}>
+                        <input 
+                            type="text" 
+                            value={couponCode} 
+                            onChange={(e) => setCouponCode(e.target.value)} 
+                            placeholder="Skriv in rabattkod" 
+                        />
+                        <button onClick={() => console.log('Rabattkod:', couponCode)}>Använd rabattkod</button>
+                    </div>
+                )}
             </div>
 
             <div className='checkOut-container'>

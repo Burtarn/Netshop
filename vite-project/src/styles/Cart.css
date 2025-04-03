@@ -29,11 +29,57 @@
 
 .checkOut-container {
     margin-top: 20px;
-    text-align: center; /* Centrerar innehållet i containern */
+    text-align: center; 
+}
+
+.coupon-section div {
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden; 
+    opacity: 0; 
+}
+
+.coupon-section div.active {
+    max-height: 100px; 
+    opacity: 1; 
+}
+
+
+.coupon-section input {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%; 
+    max-width: 300px; 
+    border: 1px solid var(--brigherRed);
+    border-radius: 4px;
+}
+
+.coupon-section button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--brigherRed);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    max-width: 200px; /* Sätt en maxbredd */
+    width: auto; /* Gör den inte 100% bred */
+    display: inline-block; /* Gör knappen inline-block för centrering */
+    margin-left: 15px;
+}
+
+.coupon-section {
+    text-align: center; /* Centrera hela sektionen */
+}
+
+.coupon-section button:hover {
+    background-color: var(--darkRed);
+    transform: translateY(-2px);
 }
 
 .checkout-button {
-    padding: 8px 12px; /* Standard padding */
+    padding: 8px 12px; 
     background-color: var(--brigherRed);
     color: black;
     border: none;
@@ -42,25 +88,25 @@
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); 
     transition: background-color 0.3s, transform 0.3s; 
     margin-top: 10px; 
-    max-width: 200px; /* Sätt en maxbredd för knappen */
-    width: 100%; /* Gör den responsiv */
+    max-width: 200px; 
+    width: 100%; 
 }
 
-/* Större skärmar */
+
 @media (min-width: 768px) {
     .checkout-button {
         padding: 8px 16px; 
         font-size: 1.1em; 
-        max-width: 250px; /* Öka maxbredden för större skärmar */
+        max-width: 250px; 
     }
 }
 
-/* Extra stora skärmar */
+
 @media (min-width: 1200px) {
     .checkout-button {
         padding: 10px 20px; 
         font-size: 1.2em; 
-        max-width: 300px; /* Öka maxbredden ytterligare */
+        max-width: 300px; 
     }
 }
 

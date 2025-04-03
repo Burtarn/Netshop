@@ -11,20 +11,12 @@ const Navbar = () => {
     
     const cartItems = useSelector((state) => state.cart.items); 
     const [isOpen, setIsOpen] = useState(false);
-    const [showSearch, setShowSearch] = useState(false);
     const { isAuthenticated } = useAuth();
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
-    const toggleSearch = () => {
-        setShowSearch(!showSearch);
-    };
-
-    const closeSearch = () => {
-        setShowSearch(false);
-    };
 
     return (
         <header className="header">
@@ -42,18 +34,6 @@ const Navbar = () => {
                         {isAuthenticated && <li><Link to="/profile">Profile</Link></li>} 
                     </ul>
                     <div className="icons">
-                        {!showSearch ? (
-                            <span className="icon" onClick={toggleSearch}>
-                                <FontAwesomeIcon icon={faSearch} />
-                            </span>
-                        ) : (
-                            <div className="search-container">
-                                <input type="text" placeholder="Sök..." className={`searchbar ${showSearch ? 'expanded' : ''}`} />
-                                <span className="icon close-icon" onClick={closeSearch}>
-                                    <FontAwesomeIcon icon={faTimes} />
-                                </span>
-                            </div>
-                        )}
                         <Link to="/cart" className="icon"> 
                             <FontAwesomeIcon icon={faShoppingCart} />
                             {cartItems.length > 0 && (
