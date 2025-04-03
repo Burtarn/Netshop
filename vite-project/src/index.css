@@ -22,6 +22,7 @@ body {
 h1, h4, h5, h6 {
   color: var(--brigherRed);
   font-family: 'Bebas Neue', cursive; /* Använd typsnittet för rubriker */
+  text-align: center;
 }
 
 h2, h3, p {

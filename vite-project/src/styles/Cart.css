@@ -27,6 +27,12 @@
     justify-content: center;
 }
 
+.total-amount {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 .cart-item:hover {
     transform: translateY(-5px);
 }
@@ -62,3 +68,18 @@
     text-align: center;
 }
 
+
+.checkOut-container {
+    margin-top: 20px;
+}
+
+.checkOut-container input,
+.checkOut-container select {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.checkOut-container button {
+    margin-top: 10px;
+}

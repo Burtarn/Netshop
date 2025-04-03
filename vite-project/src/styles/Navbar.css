@@ -50,6 +50,16 @@
         font-size: 15px; 
         color: var(--brigherRed);
     }
+    .cart-badge {
+        position: absolute;
+        top: 0; /* Justera detta värde för att flytta upp eller ner */
+        right: 30px; 
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        padding: 0px 5px;
+        font-size: 11px;
+    }
     
     .search-container {
         display: flex;

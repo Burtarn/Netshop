@@ -5,8 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faUser, faTimes, faShoppingCart } from '@fortawesome/free-solid-svg-icons'; 
 import { useAuth } from '../../context/AuthContext'; 
 import '../../styles/Navbar.css';
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
+    
+    const cartItems = useSelector((state) => state.cart.items); 
     const [isOpen, setIsOpen] = useState(false);
     const [showSearch, setShowSearch] = useState(false);
     const { isAuthenticated } = useAuth();
@@ -53,6 +56,9 @@ const Navbar = () => {
                         )}
                         <Link to="/cart" className="icon"> 
                             <FontAwesomeIcon icon={faShoppingCart} />
+                            {cartItems.length > 0 && (
+                                <span className="cart-badge">{cartItems.length}</span>
+                            )}
                         </Link>
                         <Link to="/login" className="icon">
                             <FontAwesomeIcon icon={faUser} />

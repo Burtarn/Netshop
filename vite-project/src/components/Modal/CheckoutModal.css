@@ -1,0 +1,102 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Mörkare bakgrund för bättre kontrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    max-width: 400px; 
+    margin: 50px auto; 
+    padding: 20px;
+    border: 1px solid var(--brigherRed);
+    border-radius: 8px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2); 
+    background: linear-gradient(135deg, var(--mainColor) 0%, var(--darkRed) 100%); 
+    position: relative;
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px; /* Avstånd från toppen */
+    right: 10px; /* Avstånd från höger */
+    background: none;
+    border: none;
+    font-size: 30px; /* Större knapp för bättre klickbarhet */
+    cursor: pointer;
+    color: var(--brigherRed);
+    z-index: 1001; /* Säkerställ att knappen ligger ovanpå andra element */
+}
+
+.close-button:hover {
+    background: none; /* Ingen bakgrundsfärg vid hover */
+    color: darkred; /* Ändra färg vid hover om så önskas */
+}
+
+h1 {
+    text-align: center;
+    color: var(--brigherRed);
+}
+
+h2 {
+    margin: 10px 0 5px;
+    color: var(--brigherRed);
+}
+
+input, select {
+    width: 100%; /* Fyller hela bredden */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--brigherRed);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1); /* Halvtransparent bakgrund för input */
+    color: var(--brigherRed);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Subtil skugga för input-fält */
+}
+
+input:focus {
+    border-color: white; /* Färg på ramen när fältet är i fokus */
+    outline: none; /* Ta bort standardfokuslinje */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7); /* Lättare skugga vid fokus */
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Halvtransparent färg för placeholder */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--brigherRed);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Skugga för knappen */
+    transition: background-color 0.3s, transform 0.3s; 
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: var(--darkRed);
+    transform: translateY(-2px); /* Lyft effekt vid hover */
+}
+
+.fade-in {
+    opacity: 0; 
+    animation: fadeIn 1s forwards; 
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
