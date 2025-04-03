@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7); /* Mörkare bakgrund för bättre kontrast */
+    background: rgba(0, 0, 0, 0.7); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,19 +25,20 @@
 
 .close-button {
     position: absolute;
-    top: 10px; /* Avstånd från toppen */
-    right: 10px; /* Avstånd från höger */
+    text-align: right;
+    top: 0px; 
+    right: 10px; 
     background: none;
     border: none;
-    font-size: 30px; /* Större knapp för bättre klickbarhet */
+    font-size: 30px;
     cursor: pointer;
     color: var(--brigherRed);
-    z-index: 1001; /* Säkerställ att knappen ligger ovanpå andra element */
+    z-index: 1001;
 }
 
 .close-button:hover {
-    background: none; /* Ingen bakgrundsfärg vid hover */
-    color: darkred; /* Ändra färg vid hover om så önskas */
+    background: none; 
+    color: darkred; 
 }
 
 h1 {

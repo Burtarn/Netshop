@@ -61,7 +61,7 @@ const ProductsData = () => {
                     <img src={item.image} alt={item.name} className="jeans-image" />
                     <p>{item.description}</p>
                     <p>{item.price} SEK</p>
-                    <button onClick={() => handleBuy(item)}>
+                                        <button onClick={() => handleBuy(item)}>
                         {addedItems[item.id] ? 'Tillagd' : 'Köp'}
                     </button>
                 </div>

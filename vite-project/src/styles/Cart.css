@@ -27,10 +27,53 @@
     justify-content: center;
 }
 
+.checkOut-container {
+    margin-top: 20px;
+    text-align: center; /* Centrerar innehållet i containern */
+}
+
+.checkout-button {
+    padding: 8px 12px; /* Standard padding */
+    background-color: var(--brigherRed);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s, transform 0.3s; 
+    margin-top: 10px; 
+    max-width: 200px; /* Sätt en maxbredd för knappen */
+    width: 100%; /* Gör den responsiv */
+}
+
+/* Större skärmar */
+@media (min-width: 768px) {
+    .checkout-button {
+        padding: 8px 16px; 
+        font-size: 1.1em; 
+        max-width: 250px; /* Öka maxbredden för större skärmar */
+    }
+}
+
+/* Extra stora skärmar */
+@media (min-width: 1200px) {
+    .checkout-button {
+        padding: 10px 20px; 
+        font-size: 1.2em; 
+        max-width: 300px; /* Öka maxbredden ytterligare */
+    }
+}
+
+.checkout-button:hover {
+    background-color: var(--darkRed);
+    transform: translateY(-1px); /* Lyft effekt vid hover */
+}
+
 .total-amount {
     margin-top: 20px;
     font-size: 1.5em;
     font-weight: bold;
+    text-align: center;
 }
 
 .cart-item:hover {
@@ -67,6 +110,7 @@
     color: red;
     text-align: center;
 }
+
 
 
 .checkOut-container {

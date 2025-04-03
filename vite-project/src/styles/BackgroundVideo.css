@@ -1,7 +1,7 @@
 .video-container {
     position: relative;
-    height: 100vh; /* Gör så att komponenten täcker hela höjden av viewporten */
-    overflow: hidden; /* Döljer eventuell överflödig del av videon */
+    height: 100vh; 
+    overflow: hidden; 
 }
 
 .background-video {
@@ -12,18 +12,18 @@
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -1; /* Skicka videon bakom annat innehåll */
-    transform: translate(-50%, -50%); /* Centrera videon */
+    z-index: -1; 
+    transform: translate(-50%, -50%); 
 }
 .content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; /* Ändra färg beroende på din video */
+    color: white; 
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    font-size: 3.5rem; /* Större textstorlek för rubriken */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Textskugga */
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
 }
