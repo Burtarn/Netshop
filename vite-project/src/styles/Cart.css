@@ -54,7 +54,7 @@
 
 .empty-cart {
     text-align: center;
-    color: gray;
+    color: var(--brigherRed);
 }
 
 .error {

@@ -27,7 +27,7 @@ const Navbar = () => {
         <header className="header">
             <nav className="navbar">
                 <div className="navbar-container">
-                    <div className="logo">MyLogo</div>
+                    <div className="logo">NETSHOP</div>
                     <div className="menu-icon" onClick={toggleMenu}>
                         &#9776;
                     </div>

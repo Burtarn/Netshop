@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import ProtectedRoute from './pages/ProtectedRoute';
 import { AuthProvider, useAuth } from './context/AuthContext'; 
 import Spinner from './components/Spinner/Spinner'
+import Footer from './components/Footer/Footer';
 
 const Home = lazy(() => import('./pages/Home'));
 const Products = lazy(() => import('./pages/Products'));
@@ -49,6 +50,7 @@ const RootRouter = () => {
       <Router>
         <Navbar />
         <AppRoutes />
+        < Footer />
       </Router>
     </AuthProvider>
   );
