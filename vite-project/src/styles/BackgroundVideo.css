@@ -15,10 +15,15 @@
     z-index: -1; /* Skicka videon bakom annat innehåll */
     transform: translate(-50%, -50%); /* Centrera videon */
 }
-
 .content {
-    position: relative; /* Gör att innehållet ligger ovanpå videon */
-    z-index: 1; /* Se till att detta är ovanför videon */
-    color: white; /* Textfärg för bättre kontrast mot video */
-    text-align: center; /* Centrera texten */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Ändra färg beroende på din video */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 3.5rem; /* Större textstorlek för rubriken */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Textskugga */
 }

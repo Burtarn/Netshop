@@ -15,6 +15,9 @@ const ProductsData = () => {
     const dispatch = useDispatch();
     const { items, loading, error } = useSelector((state) => state.products);
     const [fadeIn, setFadeIn] = useState(false);
+    const [addedItems, setAddedItems] = useState({});
+
+
     useEffect(() => {
         async function fetchAllData() {
             dispatch(fetchProductsStart());
@@ -39,6 +42,7 @@ const ProductsData = () => {
 
     const handleBuy = (item) => {
         dispatch(addItem(item)); 
+        setAddedItems((prev) => ({ ...prev, [item.id]: true }));
     };
 
     if (loading) {
@@ -57,7 +61,9 @@ const ProductsData = () => {
                     <img src={item.image} alt={item.name} className="jeans-image" />
                     <p>{item.description}</p>
                     <p>{item.price} SEK</p>
-                    <button onClick={() => handleBuy(item)}>Köp</button>
+                    <button onClick={() => handleBuy(item)}>
+                        {addedItems[item.id] ? 'Tillagd' : 'Köp'}
+                    </button>
                 </div>
             ))}
         </div>

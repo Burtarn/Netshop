@@ -9,8 +9,8 @@ const BackgroundVideo = () => {
                 Din webbläsare stöder inte video-taggen.
             </video>
             <div className="content">
-                <h1>Välkommen till min sida!</h1>
-                <p>Här är lite innehåll ovanpå videon.</p>
+                <h1>Välkommen till netshop</h1>
+                <p></p>
             </div>
         </div>
     );
