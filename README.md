@@ -51,3 +51,8 @@ Orderhistorik för kunder
 
 Betalningsintegration.
 
+
+![Skärmbild 2025-04-04 144040](https://github.com/user-attachments/assets/2301148f-2bd6-447b-b195-3810efb633f1)
+
+![Skärmbild 2025-04-04 144202](https://github.com/user-attachments/assets/0af73bb1-adb4-4c38-8439-6df22dfed937)
+
